@@ -1,0 +1,48 @@
+.navbar-buttons {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 50px;
+  z-index: 50;
+}
+
+div#navbarNavDropdown {
+    width: 100%;
+}
+
+div.images{
+    img {
+    max-width: 100%;
+    height: auto;
+    max-height: 250px;
+    }
+
+    .image-div {
+        position: relative;
+        display: inline-block;
+        margin-right: 5px;
+        border: none;
+        border-width: 2px;
+        height: auto;
+        max-height: 300px;
+        .btn-remove-image {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            display: none;
+            border: none;
+        }
+    }
+
+    .image-div:hover  {
+        .btn-remove-image {
+            display: block;
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.5);
+                color: black;
+            }
+        }
+        
+    }
+    
+}
+

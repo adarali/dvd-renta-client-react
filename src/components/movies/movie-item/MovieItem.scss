@@ -1,0 +1,57 @@
+
+$img-width: 100px;
+$img-height: 150px;
+
+div.movie-item {
+    margin-bottom: 5px;
+    position: relative;
+    height: 150px;
+    &:hover {
+        background: rgba(0,0,0,.1);
+    }
+    cursor: pointer;
+
+    .movie-info {
+        display: inline-flex;
+        position: relative;
+        .price {
+            position: absolute;
+            font-size: 10pt;
+            left: $img-width;
+            bottom: -$img-height;
+        }
+
+        .movie-available {
+            color: green;
+        }
+
+        .movie-unavailable {
+            color: red;
+        }
+    }
+
+    div.movie-image {
+        position: absolute;
+        float: left;
+        img {
+            position: relative;
+            width: $img-width;
+            height: 150px;
+            top: -5px;
+        }
+    }
+
+    .movie-title {
+        position: absolute;
+        left: $img-width;
+        float: left;
+        font-weight: bold;
+        margin-left: 5px;
+        // color: black;
+    }
+
+    
+}
+
+
+
