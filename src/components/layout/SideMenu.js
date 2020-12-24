@@ -87,6 +87,14 @@ export default class SideMenu extends Component {
             </p>
           </Link>
         </li>
+        <li className="nav-item">
+          <a href="/api-docs" className="nav-link">
+            <i className="nav-icon fas fa-file" />
+            <p>
+              API Documentation
+            </p>
+          </a>
+        </li>
       </ul>
     </nav>
   </div>
