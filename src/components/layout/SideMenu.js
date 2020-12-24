@@ -80,7 +80,7 @@ export default class SideMenu extends Component {
          with font-awesome or any other icon font library */}
          <LogoutButton auth={auth}/>
         <li className="nav-item">
-          <Link to="/movies" className="nav-link">
+          <Link to={process.env.PUBLIC_URL+"/movies"} className="nav-link">
             <i className="nav-icon fas fa-th" />
             <p>
               Movies
